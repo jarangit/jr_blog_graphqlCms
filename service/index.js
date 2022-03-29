@@ -11,6 +11,15 @@ export const getPosts = async () => {
             title
             createdAt
             excerpt
+            author {
+              name
+              photo {
+                url
+              }
+            }
+            featureImage {
+              url
+            }
             categories {
               name
               slug
