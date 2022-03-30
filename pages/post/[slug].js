@@ -16,8 +16,8 @@ const PostDetail = ({ post }) => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <section className="col-span-1 lg:col-span-8">
           <PostSingle post={post} />
-          <Author />
-          <CommentsForm />
+          <Author author={post.author} />
+          <CommentsForm slug={post.slug} />
           <Comments />
         </section>
         <section className="col-span-1 lg:col-span-4">
