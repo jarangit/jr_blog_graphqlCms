@@ -5,9 +5,9 @@ import Link from "next/link";
 
 import { getSimilarPosts, getRecentPosts } from "../service";
 
-const PostWidget = () => {
+const PostWidget = ({ slug, categories }) => {
+  console.log(categories);
   const [relatedPosts, setrelatedPosts] = useState([]);
-  var slug = "";
   useEffect(() => {
     if (slug) {
       getSimilarPosts(categories, slug).then((result) =>

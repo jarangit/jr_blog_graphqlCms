@@ -5,7 +5,7 @@ const Menu = () => {
     <div className="container mx-auto px-10 mb-8">
       <div className="border-b w-full inline-block border-blue-400 py-8">
         <section className="md:flosat-left block">
-          <Link href="#">
+          <Link href="/">
             <span className="cursor-pointer font-bold text-4xl">
               Chillin
             </span>

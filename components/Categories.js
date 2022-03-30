@@ -22,7 +22,7 @@ const Categories = () => {
                 ? "border-b-0"
                 : "border-b"
             } pb-3 mb-3`}>
-            {item.name}{" "}
+            {item.name}
           </span>
         </Link>
       ))}
