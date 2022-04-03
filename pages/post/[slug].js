@@ -10,6 +10,11 @@ import {
   Author,
 } from "../../components";
 const PostDetail = ({ post }) => {
+  const rounter = useRouter();
+
+  if (rounter.isFallback) {
+    return <div>Loading</div>;
+  }
   console.log(post);
   return (
     <div className="container mx-auto px-10 mb-8">
