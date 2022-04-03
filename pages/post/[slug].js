@@ -18,7 +18,7 @@ const PostDetail = ({ post }) => {
           <PostSingle post={post} />
           <Author author={post.author} />
           <CommentsForm slug={post.slug} />
-          <Comments />
+          <Comments slug={post.slug} />
         </section>
         <section className="col-span-1 lg:col-span-4">
           <div className="relative lg:sticky top-8">
